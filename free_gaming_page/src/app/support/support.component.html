@@ -1,1 +1,25 @@
-<p>support works!</p>
+<div class="container">
+    <div class="questions">
+        <h2>Questions les plus fréquentes</h2>
+        <ul>
+            <li (click)="setActive($event)">Mon compte</li>
+            <li (click)="setActive($event)">Facturation</li>
+            <li (click)="setActive($event)">Confidentialité</li>
+            <li (click)="setActive($event)">Remboursement</li>
+            <li (click)="setActive($event)">Vérification</li>
+        </ul>
+        <div class="line"></div>
+        <h5>Contacter l'équipe de support</h5>
+        <p>Contactez nous de 7h du matin à minuit</p>
+        <button>Contacter</button>
+    </div>
+
+    <div class="data">
+        <h2>Créer un ticket</h2>
+        <div class="title">
+            <input type="text" placeholder="Titre">
+            <button>Envoyer</button>
+        </div>
+        <input class="description" type="text" placeholder="Description du problème">
+    </div>
+</div>
