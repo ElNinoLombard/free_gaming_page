@@ -1,1 +1,63 @@
-<p>login works!</p>
+<div class="connexion-wrapper">
+  <div class="form-wrapper">
+    <form>
+      <div>
+        <label>
+          <strong>E-mail</strong>
+          <div [ngClass]="{ error: errors.email.error }" class="input-wraper">
+            <input
+              class="form-control input-lg"
+              formControlName="email"
+              name="email"
+              type="email"
+            />
+            <div
+              class="input-error"
+              placement="left"
+              tooltipClass="tooltip-error-input"
+            >
+              <span class="fa-stack fa-1x">
+                <em class="notranslate fas fa-circle fa-stack-2x"></em>
+                <em
+                  class="notranslate fa fa-exclamation fa-stack-1x fa-inverse"
+                ></em>
+              </span>
+            </div>
+          </div>
+        </label>
+        <label>
+          <strong>Mot de passe</strong>
+          <div
+            [ngClass]="{ error: errors.password.error }"
+            class="input-wraper"
+          >
+            <input
+              class="form-control input-lg"
+              formControlName="password"
+              name="password"
+              [type]="hide ? 'password' : 'text'"
+              #password
+            />
+            <div
+              class="input-error"
+              placement="left"
+              tooltipClass="tooltip-error-input"
+            >
+              <span class="fa-stack fa-1x">
+                <em class="notranslate fas fa-circle fa-stack-2x"></em>
+                <em
+                  class="notranslate fa fa-exclamation fa-stack-1x fa-inverse"
+                ></em>
+              </span>
+            </div>
+          </div>
+          <span>Mot de passe oublié ? </span
+          ><a routerLink="/auth/password/forgotten">Cliquez ici</a>
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="image-wrapper">
+    <img src="../../../assets/images/Background-gaming.jpeg" alt="" />
+  </div>
+</div>

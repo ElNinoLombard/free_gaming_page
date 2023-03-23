@@ -1,13 +1,10 @@
-.nav-bar{
-    height: 143px;
-}
-
 .accueil{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 0px;
-    margin-bottom: 143px;
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 
 #Title {
@@ -23,12 +20,14 @@
 }
 
 .slogan #slogan{
+    width: 100%;
     text-align: justify;
 }
 
 .image-decoration img{
     width: auto;
     height: 410px;
+    border-radius: 50px;
 }
 
 .button {
