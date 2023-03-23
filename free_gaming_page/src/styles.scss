@@ -28,6 +28,10 @@ button {
   padding: 10px 20px;
 }
 
+button:hover {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #CC0000, 0 0 30px #CC0000, 0 0 40px #CC0000, 0 0 55px #CC0000, 0 0 75px #CC0000;
+}
+
 h1 {
   font-size: 40px;
   font-weight: 700;

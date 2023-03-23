@@ -1,0 +1,91 @@
+.nav-bar{
+    height: 143px;
+}
+
+.accueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0px;
+    margin-bottom: 143px;
+}
+
+#Title {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #CC0000, 0 0 30px #CC0000, 0 0 40px #CC0000, 0 0 55px #CC0000, 0 0 75px #CC0000;
+    font-size: 100px;
+}
+
+.slogan{
+    width: 600px;
+    height: 410px;
+    font-weight: 100;
+}
+
+.slogan #slogan{
+    text-align: justify;
+}
+
+.image-decoration img{
+    width: auto;
+    height: 410px;
+}
+
+.button {
+    margin-top: 15px;
+}
+
+.offre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.frebox-pop-case, .free-gaming-setup-case{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    height: 700px;
+    border-radius: 50px;
+    background-color: #1A1A28;
+    margin-bottom: 10px;
+}
+
+.resume-pop{
+    width: 400px;
+    display: flex;
+    text-align: center;
+}
+
+.ligne-1, .ligne-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pop {
+    display: flex;
+    justify-content: center;
+}
+
+#pop {
+    width: 400px;
+    height: auto;
+}
+
+.canal, .amazon, .disney, .oqee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: auto;
+}
+
+.canal img, .amazon img, .disney img, .oqee img{
+    width: 100px;
+    height: auto;
+}
