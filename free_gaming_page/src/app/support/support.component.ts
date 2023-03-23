@@ -12,4 +12,12 @@ export class SupportComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  setActive(event: any) {
+    let links = document.getElementsByTagName('li');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove('active');
+    }
+    event.target.classList.add('active');
+  }
+
 }
