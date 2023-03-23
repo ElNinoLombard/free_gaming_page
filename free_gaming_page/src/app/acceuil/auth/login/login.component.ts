@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import {
   AbstractControl,
   FormControl,
@@ -9,6 +9,7 @@ import {
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 import { EmailService } from 'src/app/services/email/email.service';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -37,7 +38,8 @@ export class LoginComponent implements OnInit {
   };
 
   constructor(private dialogRef: MatDialogRef<LoginComponent>,
-  private emailService: EmailService,) { }
+    private emailService: EmailService,
+    private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -71,6 +73,13 @@ export class LoginComponent implements OnInit {
 
   closeDialog() {
     this.dialogRef.close();
+  }
+
+    openRegisterDialog() {
+    this.dialog.open(RegisterComponent, {
+      width: '700px',
+      height: '600px',
+    });
   }
 
 }
