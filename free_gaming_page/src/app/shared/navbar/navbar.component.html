@@ -4,10 +4,10 @@
   </div>
   <div class="nav-items">
     <div class="nav-item">
-      <a routerLink="/" routerLinkActive="active">Acceuil</a>
+      <a routerLink="/" class="active" (click)="setActive($event)">Accueil</a>
     </div>
     <div class="nav-item">
-      <a routerLink="/support" routerLinkActive="active">Support</a>
+      <a routerLink="/support" (click)="setActive($event)">Support</a>
     </div>
     <div class="nav-item">
       <button (click)="openLoginDialog()">Connexion</button>

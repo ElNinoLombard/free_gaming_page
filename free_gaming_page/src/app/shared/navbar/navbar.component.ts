@@ -9,7 +9,7 @@ import { LoginComponent } from 'src/app/acceuil/auth/login/login.component';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -19,6 +19,14 @@ export class NavbarComponent implements OnInit {
       width: '700px',
       height: '600px',
     });
+  }
+
+  setActive(event: any) {
+    let links = document.getElementsByTagName('a');
+    for (let i = 0; i < links.length; i++) {
+      links[i].classList.remove('active');
+    }
+    event.target.classList.add('active');
   }
 
 }
