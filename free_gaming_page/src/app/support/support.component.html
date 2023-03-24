@@ -2,9 +2,17 @@
     <div class="questions">
         <h2>Vos tickets</h2>
         <ul>
-            <li *ngFor="let question of tickets">{{ question }}</li>
+            <li *ngFor="let question of tickets" (click)="setActive($event)">{{ question }}</li>
         </ul>
         <button (click)="setTicket()">Créer un ticket</button>
+    </div>
+
+    <div class="message">
+        <div class="message-wrapper">
+            <p [ngClass]="isAdmin === message.admin ? 'local' : ''" *ngFor="let message of messages">{{ message.text }}
+            </p>
+        </div>
+        <input type="text" placeholder="Votre message ...">
     </div>
 </div>
 

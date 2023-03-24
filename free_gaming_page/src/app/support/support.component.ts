@@ -1,12 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
+interface messageSpecs {
+  admin: boolean,
+  text: string
+}
+
 @Component({
   selector: 'app-support',
   templateUrl: './support.component.html',
   styleUrls: ['./support.component.scss']
 })
+
 export class SupportComponent implements OnInit {
 
+  isAdmin: boolean = true;
+  messages: messageSpecs[] = [{
+    admin: true,
+    text: 'Bonjour, ceci est un test.'
+  }, {
+    admin: false,
+    text: 'Bien reçu.'
+  }];
   ticket: boolean = false;
   tickets: Array<string> = [];
 
