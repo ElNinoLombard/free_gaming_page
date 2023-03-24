@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-acceuil',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acceuil.component.scss'],
 })
 export class AcceuilComponent implements OnInit {
+  @ViewChild('setup') setupElement!: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  scrollToSetup(): void {
+    this.setupElement.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 
 }
