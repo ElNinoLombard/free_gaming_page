@@ -1,4 +1,4 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
 ::ng-deep .mat-dialog-container {
   display: flex;
@@ -26,7 +26,7 @@
   grid-row-gap: 0px;
 }
 
-.form-wrapper{
+.form-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,4 +71,31 @@ input {
   border: 1px solid var(--text-color);
   background-color: transparent;
   border-radius: 50px;
+}
+
+.register-link {
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+}
+
+.reset-password {
+  margin-top: 4em;
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--primary-color);
+    }
+  }
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }

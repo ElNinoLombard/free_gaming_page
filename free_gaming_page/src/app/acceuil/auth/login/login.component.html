@@ -3,8 +3,10 @@
     <div class="login-header">
       <h1>Connexion</h1>
       <p>
-        Vous n'avez pas encore de compte ?
-        <a (click)="openRegisterDialog()">Inscrivez-vous</a>
+        Vous n'avez pas encore de compte ? <br />
+        <a class="register-link" (click)="openRegisterDialog(); closeDialog()"
+          >Inscrivez-vous</a
+        >
       </p>
     </div>
     <form>
@@ -58,9 +60,18 @@
               </span>
             </div>
           </div>
-          <span>Mot de passe oublié ? </span
-          ><a routerLink="/auth/password/forgotten">Cliquez ici</a>
+          <div class="reset-password">
+            <span>Mot de passe oublié ? </span
+            ><a
+              routerLink="/auth/password/forgotten"
+              style="text-decoration: underline"
+              >Cliquez ici</a
+            >
+          </div>
         </label>
+      </div>
+      <div class="submit-button">
+        <button class="button" type="submit">Se connecter</button>
       </div>
     </form>
   </div>

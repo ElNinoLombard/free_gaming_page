@@ -1,0 +1,93 @@
+@import "../../../../styles.scss";
+
+::ng-deep .mat-dialog-container {
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--theme-background-color);
+  padding: 0;
+  z-index: 9999;
+  overflow-y: hidden;
+}
+
+::ng-deep .cdk-overlay-dark-backdrop.cdk-overlay-backdrop-showing {
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.connexion-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: px;
+  grid-row-gap: 0px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 2;
+  padding: 2em;
+
+  label {
+    color: var(--text-color);
+  }
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+
+  h1 {
+    color: var(--text-color);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    color: var(--text-color);
+    font-size: 1em;
+  }
+}
+
+.image-wrapper {
+  grid-area: 1 / 2 / 2 / 3;
+
+  img {
+    width: 350px;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+input {
+  padding: 10px;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.register-link {
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+  }
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
