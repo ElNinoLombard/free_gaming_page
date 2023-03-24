@@ -52,7 +52,7 @@ $free_gaming_page-theme: mat.define-light-theme((
 body {
   background-color: var(--theme-background-color);
   color: var(--text-color);
-  margin: auto 5%;
+  padding: 0% 5% 5% 5%;
 }
 
 button {
@@ -102,5 +102,6 @@ p {
 a {
   text-decoration: none;
 }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
