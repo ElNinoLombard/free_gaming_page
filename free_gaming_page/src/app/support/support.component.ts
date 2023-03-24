@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SupportComponent implements OnInit {
 
+  ticket: boolean = false;
+  tickets: Array<string> = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.tickets.push('Problème de mot de passe')
+    this.tickets.push('Erreur de payement')
+    this.tickets.push('Demande de remboursement')
   }
 
   setActive(event: any) {
@@ -20,4 +26,8 @@ export class SupportComponent implements OnInit {
     event.target.classList.add('active');
   }
 
+
+  setTicket() {
+    this.ticket = !this.ticket
+  }
 }

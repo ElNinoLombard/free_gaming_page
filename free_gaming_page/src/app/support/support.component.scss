@@ -1,13 +1,19 @@
 .container {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: grid;
+    margin-top: 1em;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-column-gap: 2em;
     grid-row-gap: 0px;
     background-color: var(--theme-background-color);
     align-items: center;
+
+    .retour {
+        align-self: flex-start;
+        justify-self: flex-start;
+    }
 
     .questions,
     .data {
@@ -88,4 +94,9 @@
             border-radius: 20px;
         }
     }
+}
+
+.button-wrapper {
+    width: 100%;
+    margin-top: 1em;
 }
