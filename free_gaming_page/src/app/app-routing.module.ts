@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: 'accueil', component: AcceuilComponent },
+      { path: '', component: AcceuilComponent },
       { path: 'support', component: SupportComponent },
       { path: 'ticket', component: TicketsComponent }
     ]
